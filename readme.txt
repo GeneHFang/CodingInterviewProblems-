@@ -1,0 +1,2 @@
+This is a repo of all coding interview problems that I have encountered. Some may not have optimal solutions. Some may not even have working solutions. 
+All files are have headers describing the problem and solution.
