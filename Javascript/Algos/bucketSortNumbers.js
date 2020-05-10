@@ -63,6 +63,14 @@ export const bucketSortGrades = (array, ascending) => {
         }
     });
     
+    /**
+     * A common optimization is to flatten the bucket array first then sort the entire array
+     * Since I explained it in my blog as sort then flatten, I will leave this option as comments
+     */
+    //let flatBucket = buckets.flat();
+    //insertionSort(flatBucket, ascending);
+    //return flatBucket;
+
     //Sort each bucket using insertion sort
     for (let i = 0 ; i < buckets.length ; i++){
         insertionSort(buckets[i],ascending);
