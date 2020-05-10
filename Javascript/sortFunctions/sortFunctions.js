@@ -1,7 +1,7 @@
 
 /**
  * Classic insertion sort in place. 
- * @args Array of numbers, boolean indicating ascending (true) or descending(false)
+ * @args Array of numbers or strings, boolean indicating ascending (true) or descending(false)
  * @returns null, modifies argument array.
  */
 export const insertionSort = (array, ascending) => {
