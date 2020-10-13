@@ -1,16 +1,16 @@
 //recursively create all permutations of an array
 
-let findPerms = (arr) => {
-    if (arr.length < 2){
-        return arr;
+let findPerms = (array) => {
+    if (array.length < 2){
+        return array;
     }
 
     let permArr = [];
 
-    arr.forEach((e, i) => {
+    array.forEach((e, i) => {
         
-        if (arr.indexOf(e)!== i) { return; }
-        let remaining = [...arr.slice(0,i), ...arr.slice(i+1)];
+        if (array.indexOf(e)!== i) { return; }
+        let remaining = [...array.slice(0,i), ...array.slice(i+1)];
 
 
         findPerms(remaining).forEach((ele)=>{
